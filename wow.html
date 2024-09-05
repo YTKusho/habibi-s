@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengungkapan Perasaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000000;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        .container {
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            color: #ff1493;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function ungkapkanPerasaan() {
+            document.getElementById("pesan").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hai, Ada yang Ingin Aku Sampaikan</h1>
+        <p>Aku sudah lama ingin mengatakan ini. Klik tombol di bawah ini untuk mengetahui apa yang ada di hatiku.</p>
+        <button onclick="ungkapkanPerasaan()">Klik di sini</button>
+
+        <div id="pesan" class="hidden-message">
+            <p>❤️ Aku suka kamu ❤️</p>
+            <p>Maukah kamu menjadi bagian dari hidupku?</p>
+        </div>
+    </div>
+
+</body>
+</html>
